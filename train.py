@@ -142,7 +142,7 @@ def main():
   args = parser.parse_args()
   os.environ['TF_CPP_MIN_LOG_LEVEL'] = str(args.tf_log_level)
   run_name = args.name or args.model
-  log_dir = os.path.join(args.base_dir, 'logs-%s' % run_name)
+  log_dir = os.path.join('../drive/My Drive/test2')#, 'logs-%s' % run_name)
   os.makedirs(log_dir, exist_ok=True)
   infolog.init(os.path.join(log_dir, 'train.log'), run_name, args.slack_url)
   hparams.parse(args.hparams)
